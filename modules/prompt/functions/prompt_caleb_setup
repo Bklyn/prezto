@@ -69,7 +69,7 @@ function prompt_caleb_setup {
   zstyle ':vcs_info:(sv[nk]|bzr):*' branchformat '%b:%r'
 
   # Define prompts.
-  PROMPT='%B%F{blue}%T%b %F{cyan}${_prompt_caleb_pwd}%f${git_info:+${(e)git_info[prompt]}}%F{yellow}${vcs_info_msg_0_}%f%(!. %B%F{red}#%f%b.)${editor_info[keymap]} '
+  PROMPT='%B%F{blue}%T%b %F{red}%n@%m%f %F{cyan}${_prompt_caleb_pwd}%f${git_info:+${(e)git_info[prompt]}}%F{yellow}${vcs_info_msg_0_}%f%(!. %B%F{red}#%f%b.)${editor_info[keymap]} '
   RPROMPT='${editor_info[overwrite]}%(?:: %F{red}⏎%f)${VIM:+" %B%F{green}V%f%b"}${git_info[rprompt]}'
   SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]? '
 }
