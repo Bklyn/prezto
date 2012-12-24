@@ -29,7 +29,7 @@ function set-screen-window-title {
 function set-terminal-window-title {
   if [[ "$TERM" == ((x|a|ml|dt|E)term*|(u|)rxvt*) ]]; then
     local prefix
-    zstyle -s ':prezto:module:terminal' prefix 'prefix'
+    zstyle -s ':prezto:module:terminal' window-title-prefix 'prefix'
     printf "\e]2;%s%s\a" ${(V%)prefix} ${(V)argv}
   fi
 }
@@ -38,7 +38,7 @@ function set-terminal-window-title {
 function set-terminal-tab-title {
   if [[ "$TERM" == ((x|a|ml|dt|E)term*|(u|)rxvt*) ]]; then
     local prefix
-    zstyle -s ':prezto:module:terminal' prefix 'tabprefix'
+    zstyle -s ':prezto:module:terminal' tab-title-prefix 'prefix'
     printf "\e]1;%s%s\a" ${(V%)prefix} ${(V)argv}
   fi
 }

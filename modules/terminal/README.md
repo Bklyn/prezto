@@ -13,12 +13,10 @@ directory, add the following to *zpreztorc*:
 
     zstyle ':prezto:module:terminal' auto-title 'yes'
 
-A user-defined prefix may be added to the title using the following
-styles, which undergo prompt expansion:
+To prefix terminal window and tab titles, add the following to *zpreztorc*:
 
-    zstyle ':prezto:module:terminal' prefix '%n @ %m: '
-    zstyle ':prezto:module:terminal' tabprefix '%n @ %m: '
-
+    zstyle ':prezto:module:terminal' window-title-prefix '%n@%m: '
+    zstyle ':prezto:module:terminal' tab-title-prefix '%m: '
 
 Functions
 ---------
