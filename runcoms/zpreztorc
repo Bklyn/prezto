@@ -140,12 +140,6 @@ zstyle ':vcs_info:*' enable svn
 # Set the tab title format.
 # zstyle ':prezto:module:terminal:tab-title' format '%m: %s'
 
-# Set the window title prefix.
-zstyle ':prezto:module:terminal' window-title '%n@%m: %s'
-
-# Set the tab title prefix.
-zstyle ':prezto:module:terminal' tab-title '%m: %s'
-
 #
 # Tmux
 #
