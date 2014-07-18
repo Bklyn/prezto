@@ -92,6 +92,13 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 zstyle ':vcs_info:*' enable svn
 
 #
+# Ruby
+#
+
+# Auto switch the Ruby version on directory change.
+# zstyle ':prezto:module:ruby:chruby' auto-switch 'yes'
+
+#
 # Screen
 #
 
@@ -149,4 +156,3 @@ zstyle ':vcs_info:*' enable svn
 
 # Auto start a session when Zsh is launched in a SSH connection.
 # zstyle ':prezto:module:tmux:auto-start' remote 'yes'
-
