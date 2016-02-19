@@ -21,8 +21,3 @@ if (( $+commands[fortune] )); then
     print
   fi
 fi
-
-if (( $+commands[keychain] )) && test -d ~/.ssh; then
-  keychain --quiet $HOME/.ssh/id_?sa $HOME/.ssh/identity
-  . ~/.keychain/`uname -n`-sh
-fi
