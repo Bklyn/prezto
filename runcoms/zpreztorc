@@ -38,6 +38,13 @@ zstyle ':prezto:load' pmodule \
   'python'
 
 #
+# Autosuggestions
+#
+
+# Set the query found color.
+# zstyle ':prezto:module:autosuggestions:color' found ''
+
+#
 # Editor
 #
 
@@ -125,6 +132,7 @@ zstyle ':vcs_info:*' enable svn
 #   'main' \
 #   'brackets' \
 #   'pattern' \
+#   'line' \
 #   'cursor' \
 #   'root'
 #
