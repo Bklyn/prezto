@@ -17,10 +17,18 @@
 # Execute code only if STDERR is bound to a TTY.
 [[ -o INTERACTIVE && -t 2 ]] && {
 
-  # Print a random, hopefully interesting, adage.
-  if (( $+commands[fortune] )); then
-    fortune -s
-    print
+  # Weather forecast
+  if (( $+commands[wego] )); then
+    if [[ -t 0 || -t 1 ]]; then
+      wego -d 1 2>/dev/null
+    fi
+  else
+    # Print a random, hopefully interesting, adage.
+    if (( $+commands[fortune] )); then
+      if [[ -t 0 || -t 1 ]]; then
+        fortune -s
+        print
+      fi
   fi
 
 } >&2
