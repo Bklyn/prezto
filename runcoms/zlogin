@@ -19,16 +19,13 @@
 
   # Weather forecast
   if (( $+commands[wego] )); then
-    if [[ -t 0 || -t 1 ]]; then
-      wego -d 1 2>/dev/null
-    fi
+    wego -d 1 2>/dev/null
   else
     # Print a random, hopefully interesting, adage.
     if (( $+commands[fortune] )); then
-      if [[ -t 0 || -t 1 ]]; then
-        fortune -s
-        print
-      fi
+      fortune -s
+      print
+    fi
   fi
 
 } >&2
